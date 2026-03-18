@@ -1,0 +1,13 @@
+bimbimbanban = input ("Qual seu nome?")
+idade = int (input ("Qual sua idade?"))
+sintomas = ["dores","fadiga","taquicardia","tremores", "emocional", "desfoco"]
+
+for indice, sintoma in enumerate(sintomas):
+    print (f"Responda {indice} para: {sintoma}")
+
+sintoma_do_usuario = int(input("\nQual sintoma está sentindo? "))
+
+if sintoma_do_usuario > 0 or sintoma_do_usuario < len(sintomas):
+    print ("Responda mais algumas perguntas")
+else :
+    print ("Ótimo")
