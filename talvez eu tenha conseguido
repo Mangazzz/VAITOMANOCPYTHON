@@ -1,0 +1,42 @@
+print ("𖦹 GenHealth: Como está? 𖦹")
+
+bimbimbanban = input ("Qual seu nome?")
+idade = int (input ("Qual sua idade?"))
+sintomas = ["dores","fadiga","taquicardia","tremores", "tristeza/raiva", "desfoco"]
+sim = 0
+
+for indice, sintoma in enumerate(sintomas):
+    print (sintoma)
+
+sintoma_do_usuario = input("\nQual desses sintomas está sentindo? ")
+
+if sintoma_do_usuario in (sintomas):
+    print ("Responda mais algumas perguntas com sim ou não")
+
+    triste = input ("\nVocê tem se sentido triste e sem vontade recentemente?\n")
+    if triste == ("sim" or "Sim"):
+        sim += 1
+    tomas = input("\nVocê tem tido pensamentos sobre se machucar ou tirar a própria vida?\n")
+    if tomas == ("sim" or "Sim"):
+        sim += 1
+    tenebroso = input ("\nVocê planeja os pequenos detalhes e tem medo de tudo dar errado?\n")
+    if tenebroso == ("sim" or "Sim"):
+        sim += 1
+    fulero = input ("\nVocê tem dormido mal frequentemente?\n")
+    if fulero == ("sim" or "Sim"):
+        sim += 1
+    dor_de_dente = input("\nVocê sente dores pelo corpo, principalmente barriga e cabeça?\n")
+    if dor_de_dente == ("sim" or "Sim"):
+        sim += 1
+    eutotremendo = input("\nVocê costuma ter reações excessivas quando algo sai fora do normal?\n")
+    if eutotremendo == ("sim" or "Sim"):
+        sim += 1
+
+
+
+else :
+    print ("Caso se sinta mal, consulte um profissional!")
+
+while (sim >= 4):
+    print ("Você deveria procurar ajuda.")
+    break
